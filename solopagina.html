@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/25ffacb091.js" crossorigin="anonymous"></script>
+    <title>Tienda de Mochilas</title>
+    <link rel="stylesheet" href="styles/styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra superior con contacto, buscador, filtro y carrito -->
+    <div class="top-bar">
+        <div class="contact-info">
+            <p>Contacto: mundodemochilas01@gmail.com | Tel: 907-189-536</p>
+        </div>
+        <div class="search-filter-cart">
+            <input type="text" id="searchInput" placeholder="Buscar mochilas...">
+            <button id="search-btn" onclick="buscarProducto()">Buscar</button>
+            <a href="carrito.html" class="cart">🛒 Carrito (<span id="cart-count">0</span>)</a>
+        </div>
+    </div>
+
+    <!-- Título -->
+    <div class="title">
+        <h1>¡Bienvenidos al mundo de las mochilas!</h1>
+    </div>
+
+    <!-- Banner Animado -->
+    <div class="banner">
+        <div class="banner-images">
+            <div class="slide-wrapper">
+                <div class="slide"><img src="imagenes.jpg/banner1.png" alt="Mochila 1"></div>
+                <div class="slide"><img src="imagenes.jpg/banner2.png" alt="Mochila 2"></div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- Navegación -->
+    <div class="nav">
+        <a href="inicio.html">Inicio</a>
+        <a href="catalogo-mochilas.html">Catálogo</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="catalogo">
+        <h2>Catálogo de Mochilas</h2>
+        <div class="product" data-name="mochila deportiva" data-type="deportiva">
+            <img src="imagenes.jpg/deportiva.png" alt="">
+            <h3>Mochila Deportiva</h3>
+            <p>Precio: S/. 49.90</p>
+            <button class="add-to-cart" data-product="Mochila Deportiva" data-price="49.90">Añadir al carrito</button>
+        </div>
+        <div class="product" data-name="mochila escolar" data-type="escolar">
+            <img src="imagenes.jpg/escolar.png" alt="">
+            <h3>Mochila Escolar</h3>
+            <p>Precio: S/. 79.90</p>
+            <button class="add-to-cart" data-product="Mochila Escolar" data-price="79.90">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <!-- Cupón de Descuento -->
+    <div class="cupon-section">
+        <h3>¡Obtén un descuento del 30% usando el cupón!</h3>
+        <button onclick="generarCupon()">Generar Cupón</button>
+        <p id="cupon-codigo" style="display:none;">Tu código de cupón: <strong>CUPON30</strong></p>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="footer">
+        <div class="footer-content">
+            <h3>MEDIOS DE CONTACTO</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61566370500088" target="_blank" class="social-link">
+                    <i class="fab fa-facebook social-icon"></i> Facebook
+                </a>
+                <a href="https://x.com/MundoMochilas_" target="_blank" class="social-link">
+                    <i class="fab fa-twitter social-icon"></i> Twitter
+                </a>
+                <a href="https://www.instagram.com/mundomochilas2024/" target="_blank" class="social-link">
+                    <i class="fab fa-instagram social-icon"></i> Instagram
+                </a>
+            </div>
+        </div>
+        <div class="payment-section">
+            <h3>MEDIOS DE PAGO</h3>
+            <div class="payment-icons">
+                <a href="pago.html" class="payment-link">
+                    <i class="fab fa-cc-visa payment-icon"></i> BCP
+                </a>
+            </div>
+        </div>
+        <a href="https://wa.me/912890032" target="_blank" class="whatsapp">
+            <i class="fa-brands fa-whatsapp fa-2xl" style="color: #00ad79;"></i>
+            <span class="whatsapp-text"> WhatsApp </span>
+        </a>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
+

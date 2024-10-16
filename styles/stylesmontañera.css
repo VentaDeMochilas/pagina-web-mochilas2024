@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-bottom: 60px; /* Espacio para el footer */
+}
+
+header {
+    background-color: rgba(135, 78, 78, 0.922);
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Estilos para la barra de navegación */
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+
+.nav a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    background-color: #575757;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(4, auto); /* 4 filas */
+    gap: 20px; /* Espacio entre elementos */
+    padding: 20px;
+    max-width: 1200px; /* Máximo ancho del contenedor */
+    margin: auto; /* Centra el contenedor */
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.product .price {
+    font-weight: bold;
+    color: #7b7676fb;
+}
+
+/* Estilos del botón de añadir al carrito */
+.button {
+    background-color: rgba(135, 78, 78, 0.922);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: rgba(135, 78, 78, 0.922);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(135, 78, 78, 0.922);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative; /* Cambié de 'fixed' a 'relative' */
+    bottom: 0;
+}
+
+

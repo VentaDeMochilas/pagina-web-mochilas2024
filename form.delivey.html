@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Delivery</title>
+    <link rel="stylesheet" href="styles/stylo.delivery.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Formulario de Delivery</h1>
+        
+        <!-- Formulario de Delivery -->
+        <form id="delivery-form" novalidate>
+            <div class="form-group">
+                <label for="nombre-delivery">Nombre Completo:</label>
+                <input type="text" id="nombre-delivery" name="nombre-delivery" placeholder="Escribe tu nombre completo" required aria-required="true">
+                <small class="error-message" id="nombre-delivery-error">Por favor, ingresa tu nombre completo.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="direccion">Dirección de Entrega:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Escribe tu dirección completa" required aria-required="true">
+                <small class="error-message" id="direccion-error">Por favor, ingresa la dirección de entrega.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono-delivery">Teléfono:</label>
+                <input type="tel" id="telefono-delivery" name="telefono-delivery" placeholder="999-999-999" required aria-required="true" pattern="[0-9]{9}">
+                <small class="error-message" id="telefono-delivery-error">Por favor, ingresa un número de teléfono válido.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="fecha-entrega">Fecha de Entrega:</label>
+                <input type="date" id="fecha-entrega" name="fecha-entrega" required aria-required="true">
+                <small class="error-message" id="fecha-entrega-error">Por favor, selecciona una fecha de entrega válida.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Añade algún comentario adicional"></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Solicitar Delivery</button>
+        </form>
+
+        <div class="success-message" id="delivery-success" style="display: none;">Tu solicitud de delivery ha sido enviada correctamente.</div>
+    </div>
+    <script src="script/delivery.js"></script>
+
+</body>
+</html>
