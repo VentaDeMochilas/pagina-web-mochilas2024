@@ -1,0 +1,141 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.cart-container {
+    max-width: 700px; /* Reducido de 900px a 700px */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px; /* Bordes ligeramente más redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.6em; /* Reducido de 1.8em a 1.6em */
+    margin-bottom: 15px;
+}
+
+/* Tabla del carrito */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 12px; /* Reducido de 15px a 12px */
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    text-transform: uppercase; /* Textos de encabezados en mayúsculas */
+    font-size: 0.9em;
+    color: #555;
+}
+
+table td {
+    font-size: 0.9em;
+}
+
+.cart-summary {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#subtotal, #total {
+    font-size: 1.1em; /* Tamaño de texto reducido */
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Botones de acción */
+button, .btn-back {
+    display: inline-block;
+    width: auto;
+    padding: 10px 15px; /* Tamaño de botón reducido */
+    font-size: 0.95em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+button:hover, .btn-back:hover {
+    background-color: #218838;
+}
+
+.btn-back {
+    background-color: #007bff;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    background-color: #0056b3;
+}
+
+/* Inputs de texto */
+input[type="text"], .quantity-input {
+    width: 70px; /* Tamaño ajustado de los inputs */
+    padding: 7px;
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.quantity-input {
+    width: 50px;
+}
+
+/* Estilos para el botón de eliminar */
+.remove-item-btn {
+    padding: 8px 12px;
+    font-size: 0.85em;
+    color: #e74c3c;
+    background-color: transparent;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.remove-item-btn:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Diseño para pantallas pequeñas */
+@media (max-width: 768px) {
+    .cart-container {
+        padding: 15px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    button, .btn-back {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    #subtotal, #total {
+        font-size: 1em;
+    }
+}
